@@ -1,7 +1,7 @@
-let romano = "";
-for (let i = 0; i < equivalencias.length; i++) {
-    while (numeroDecimal >= equivalencias[i].valorDecimal) {
-        romano += equivalencias[i].simboloRomano;
-        numeroDecimal -= equivalencias[i].valorDecimal;
+let resultadoFinal = "";
+for (let indice = 0; indice < tablaConversion.length; indice++) {
+    while (valorInicial >= tablaConversion[indice].numero) {
+        resultadoFinal += tablaConversion[indice].romano;
+        valorInicial -= tablaConversion[indice].numero;
     }
 }
